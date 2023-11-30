@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Issue Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Issue Tracker</h1>
+        <div class="issue-form">
+            <label for="issueTitle">Issue Title:</label>
+            <input type="text" id="issueTitle" placeholder="Enter issue title">
+
+            <label for="assignee">Assignee:</label>
+            <input type="text" id="assignee" placeholder="Assign to">
+
+            <label for="priority">Priority:</label>
+            <select id="priority">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+
+            <label for="attachment">Attachment:</label>
+            <input type="file" id="attachment">
+
+            <button onclick="createIssue()">Create Issue</button>
+        </div>
+
+        <div class="issue-list">
+            <h2>Issue List</h2>
+            <ul id="issues"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
